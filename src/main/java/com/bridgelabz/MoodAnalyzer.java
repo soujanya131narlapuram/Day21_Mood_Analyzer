@@ -10,13 +10,18 @@ public class MoodAnalyzer {
     MoodAnalyzer(String message){
         this.message = message;
     }
-    public String analyseMood(){
-        if(this.message.equals("I am in Sad Mood")){
+    public String analyZeMood(){
+       try{
+           if(this.message.equals("I am in Sad Mood")){
             System.out.println("In Sad mood");
             return "SAD";
         } else{
             System.out.println("In Happy mood");
-            return "HAPPY";
-        }
+            return "HAPPY";}
+
+       } catch(Exception e){
+        return "HAPPY";
     }
+
+}
 }
