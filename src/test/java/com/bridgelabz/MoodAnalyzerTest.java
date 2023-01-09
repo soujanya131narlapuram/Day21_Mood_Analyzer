@@ -6,7 +6,7 @@ public class MoodAnalyzerTest {
     static MoodAnalyzer moodAnalyzer;
 
     @Test
-    public void testAnalyseMood(){
+    public void testAnalyZeMood() throws MoodAnalysisException {
         moodAnalyzer = new MoodAnalyzer("I am in Sad Mood");
         String result = moodAnalyzer.analyZeMood();
         Assertions.assertEquals(result,"SAD");
